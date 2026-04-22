@@ -105,9 +105,9 @@ OS: Ubuntu 20.04+ / Debian 11+ / Linux Mint 20+
 
 5.  **Jalankan aplikasi:**
     ```bash
-    python3 main.py
+    python3 app.py
     # atau dengan uvicorn
-    uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    uvicorn app:app --host 0.0.0.0 --port 8000 --reload
     ```
 
 ### Akses Web Interface
@@ -123,7 +123,7 @@ http://localhost:8000
 
 ```
 vod-hls-streamer/
-├── main.py                 # Aplikasi utama FastAPI
+├── app.py                 # Aplikasi utama FastAPI
 ├── requirements.txt        # Python dependencies
 ├── README.md               # Dokumentasi
 ├── run.sh                  # Script untuk menjalankan server
@@ -138,7 +138,7 @@ vod-hls-streamer/
 
 ## ⚙️ Konfigurasi
 
-Edit parameter di `main.py` pada bagian `class Config`:
+Edit parameter di `app.py` pada bagian `class Config`:
 
 ```python
 class Config:
@@ -305,7 +305,7 @@ After=network.target
 Type=simple
 User=badrus
 WorkingDirectory=/home/badrus/VOD
-ExecStart=/usr/local/bin/uvicorn main:app --host 0.0.0.0 --port 8000
+ExecStart=/usr/local/bin/uvicorn app:app --host 0.0.0.0 --port 8000
 Restart=always
 Nice=10
 
