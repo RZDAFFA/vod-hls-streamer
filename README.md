@@ -347,9 +347,9 @@ Kontribusi selalu diterima! Silakan:
 
 ---
 
-```
 
 
+---
 
 ##  Credits
 
@@ -357,5 +357,5 @@ Kontribusi selalu diterima! Silakan:
 - [FFmpeg](https://ffmpeg.org/) - Video processing
 - [Intel](https://www.intel.com/content/www/us/en/architecture-and-technology/quick-sync-video/quick-sync-video-general.html) - Quick Sync Video
 
-
+---
 **Made for Intel Pentium J5005 users**
