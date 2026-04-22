@@ -361,7 +361,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy...
 
 ---
 
-## 🙏 Credits
+##  Credits
 
 - [FastAPI](https://fastapi.tiangolo.com/) - Web framework
 - [FFmpeg](https://ffmpeg.org/) - Video processing
@@ -369,4 +369,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy...
 
 ---
 
-**Made with ❤️ for Intel Pentium J5005 users**
+**Made for Intel Pentium J5005 users**
