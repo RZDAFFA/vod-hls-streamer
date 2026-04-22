@@ -21,10 +21,8 @@
 - [🎮 Cara Penggunaan](#-cara-penggunaan)
 - [🔧 Troubleshooting](#-troubleshooting)
 - [🏗️ Arsitektur Sistem](#-arsitektur-sistem)
-- [🚀 Deployment](#-deployment)
-- [🤝 Kontribusi](#-kontribusi)
 - [📝 Changelog](#-changelog)
-- [📄 Lisensi](#-lisensi)
+
 
 ---
 
@@ -290,50 +288,6 @@ ffmpeg -i input.mp4 -c:v libx264 -c:a aac output.mp4
 
 ---
 
-## 🚀 Deployment
-
-### Systemd Service (Auto-start) - RECOMMENDED
-
-Buat file `/etc/systemd/system/vod-streamer.service`:
-
-```ini
-[Unit]
-Description=VOD HLS Streamer for Intel J5005
-After=network.target
-
-[Service]
-Type=simple
-User=badrus
-WorkingDirectory=/home/badrus/VOD
-ExecStart=/usr/local/bin/uvicorn app:app --host 0.0.0.0 --port 8000
-Restart=always
-Nice=10
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Kemudian:
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable vod-streamer
-sudo systemctl start vod-streamer
-```
-
----
-
-## 🤝 Kontribusi
-
-Kontribusi selalu diterima! Silakan:
-
-1. Fork repository
-2. Buat branch fitur (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buat Pull Request
-
----
-
 ## 📝 Changelog
 
 ### [1.0.0] - 2026-04-23
@@ -347,9 +301,6 @@ Kontribusi selalu diterima! Silakan:
 
 ---
 
-
-
----
 
 ##  Credits
 
